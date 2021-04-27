@@ -14,16 +14,16 @@
     <header></header>
     <main>
         <div class="media">
-            <img class="pos" src="" alt="">
             <div class="hide">
-                <h1> 
-                    <?php 
-                    for($i = 0; $i < count($database); $i++){
-                        echo $database[$i]$album["title"];
-                        };
-                    ?></h1>
-                <h3><?php?>ciao</h3>
-                <h4><?php?>ciao</h4>
+                <?php
+                    foreach($database as $album){
+                        //echo "<img src=".$title = $album["poster"]." alt="">"
+                        echo "<h1>".$title = $album["title"]."</h1>";
+                        echo "<h2>".$author = $album["author"]."</h2>";
+                        echo "<h3>".$year = $album["year"]."</h3>";
+                    };
+                ?>
+                
             </div>    
         </div>  
     </main>

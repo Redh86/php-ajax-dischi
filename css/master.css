@@ -35,8 +35,8 @@ main {
     justify-content: center;
 }
 .hide h1,
-.hide h3,
-.hide h4 {
+.hide h2,
+.hide h3 {
     color:white;
 }
 .media:hover .pos {
