@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(16, 16, 143);
+}
+
+header {
+    height: 40vh;
+}
+
+/* main */
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(16, 16, 143);
+}
+.media {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+    background-color: rgb(0, 0, 0);
+}
+.hide {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+.hide h1,
+.hide h3,
+.hide h4 {
+    color:white;
+}
+.media:hover .pos {
+    opacity: 0.3;
+}
+.ban {
+    width: 20%;
+    margin: 5px;
+}
+.star {
+    color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
