@@ -14,17 +14,14 @@
     <header></header>
     <main>
         <div class="media">
-            <div class="hide">
-                <?php
-                    foreach($database as $album){
-                        //echo "<img src=".$title = $album["poster"]." alt="">"
-                        echo "<h1>".$title = $album["title"]."</h1>";
-                        echo "<h2>".$author = $album["author"]."</h2>";
-                        echo "<h3>".$year = $album["year"]."</h3>";
-                    };
-                ?>
-                
-            </div>    
+            <?php foreach($database as $album) {?>
+                <div class="album">
+                    <img src="<?php echo($album["poster"]) ?>" alt=""> 
+                    <h1><?php echo($album["title"]) ?></h1>
+                    <h2><?php echo($album["author"]) ?></h2>
+                    <h3><?php echo($album["year"]) ?></h3>
+                </div>  
+            <?php }; ?>    
         </div>  
     </main>
 </body>
